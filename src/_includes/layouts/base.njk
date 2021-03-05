@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
   <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,6 +10,7 @@
       media="all"
       href="/style.css"
     />
+
   </head>
   <body>
     {% include "partials/header.njk" %}
@@ -16,8 +18,8 @@
       {{ content | safe }}
     </main>
 		{% include "partials/footer.njk" %}
+		<script src="/index.js" charset="utf-8"></script>
   </body>
 </html>
-
 
 <!-- doge -->
