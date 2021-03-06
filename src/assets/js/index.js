@@ -9,4 +9,6 @@ function showCurrentYear() {
 	let timeEl = document.getElementById('currentYear')
 	timeEl.textContent = currentYear.getFullYear()
 }
+
+
 document.addEventListener('DOMContentLoaded', start)

@@ -18,7 +18,15 @@
       {{ content | safe }}
     </main>
 		{% include "partials/footer.njk" %}
-		<script src="/index.js" charset="utf-8"></script>
+
+		{% if pageJS %}
+    <script
+      src="/assets/js/{{ pageJS }}"
+      type="text/javascript"
+    ></script>
+    {% endif %}
+		<!-- <script src="/index.js" charset="utf-8"></script> -->
+
   </body>
 </html>
 
