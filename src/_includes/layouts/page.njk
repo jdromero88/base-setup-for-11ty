@@ -1,21 +1,14 @@
----
-title: Pagina Base para comenzar el desarrollo
-name: Jose Romero
-age: 32
-profesion: Developer
----
-<!DOCTYPE html>
-  <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title> {{ title }} | </title>
-  </head>
-  <body>
-    A sample page here
-    <footer>
-      <div>
-        Developed by {{ name }}
-      </div>
-    </footer>
-  </body>
-</html>
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+<article class="page">
+  {% set pageTitle = title %} {% set pageSubtitle = subtitle %}
+
+  <div class="page__content content">
+    {{ content | safe }}
+  </div>
+  {% if not isAbout %}
+    <p>Digo hola soy {{ title }} </p>
+  {% endif %}
+</article>
+{% endblock %}

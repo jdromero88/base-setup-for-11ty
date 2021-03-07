@@ -23,14 +23,19 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "git@github.com:jdromero88/base-setup-for-11ty.git"
+		"url": "https://github.com/jdromero88/base-setup-for-11ty"
 	},
-	"author": "Jose Romero",
+	"author": {
+		"name": "Jose Romero",
+		"email": "jr@josedromero.com",
+		"url": "https://josedromero.com"
+	},
 	"license": "SEE LICENSE IN license.md",
 	"bugs": {
-		"url": "https://github.com/jdromero88/base-setup-for-11ty/issues"
+		"url": "https://github.com/jdromero88/base-setup-for-11ty/issues",
+		"email": "jr@josedromero.com"
 	},
-	"homepage": "",
+	"homepage": "https://github.com/jdromero88/base-setup-for-11ty/#readme",
 	"devDependencies": {
 		"@11ty/eleventy": "^0.11.1",
 		"eslint": "^7.21.0",
