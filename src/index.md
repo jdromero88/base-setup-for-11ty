@@ -1,7 +1,7 @@
 ---
-layout: layouts/base
+layout: 'layouts/base'
 title: 'Base para desarrollar un website con 11ty'
-pageClass: home
+pageClass: 'home'
 isHome: true
 pageJS: index.js
 ---
