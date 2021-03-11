@@ -1,1 +1,7 @@
-@use 'abstracts' as *;
+@use '../abstracts' as *;
+@use 'sass:map';
+
+
+[role='list'] {
+	list-style: none;
+}
