@@ -1,0 +1,13 @@
+@use 'variables' as *;
+@use 'sass:math';
+
+$browser-context: 16px;
+
+@function rem($size) {
+	@if is-px($size) == false {
+		$size: $size * 1px;
+	}
+
+	$rem-size: $size / $browser-context;
+	@return $rem-size * 1rem;
+}
